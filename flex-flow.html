@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        margin: 010px auto;
+        border: 3px solid red;
+
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      .container > div {
+        width: 150px;
+        height: 50px;
+        border: 1px solid grey;
+        text-align: center;
+      }
+
+      #column-wrap {
+        flex-flow: wrap column;
+        height: 350px;
+        width: 350px;
+      }
+
+      #column-wrap-reverse {
+        flex-flow: column wrap-reverse;
+        height: 350px;
+        width: 350px;
+      }
+
+      #column-reverse-wrap {
+        flex-flow: column-reverse wrap;
+        height: 350px;
+        width: 350px;
+      }
+
+
+      #column-reverse-wrap-reverse {
+        flex-flow: column-reverse wrap-reverse;
+        height: 350px;
+        width: 350px;
+      }
+
+
+
+/*row rules*/
+
+      #row-wrap {
+        flex-flow: wrap row;
+        height: 350px;
+        width: 350px;
+      }
+
+      #row-wrap-reverse {
+        flex-flow: row wrap-reverse;
+        height: 350px;
+        width: 350px;
+      }
+
+      #row-reverse-wrap {
+        flex-flow: row-reverse wrap;
+        height: 350px;
+        width: 350px;
+      }
+
+
+      #row-reverse-wrap-reverse {
+        flex-flow: row-reverse wrap-reverse;
+        height: 350px;
+        width: 350px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>column wrap</h1>
+    <div class="container" id="column-wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+
+    <h1>column wrap reverse</h1>
+    <div class="container" id="column-wrap-reverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+
+    <h1>column -reverse wrap</h1>
+    <div class="container" id="column-reverse-wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+    <h1>column -reverse wrap-reverse</h1>
+    <div class="container" id="column-reverse-wrap-reverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+
+    <!--row rules-->
+    <h1>row wrap</h1>
+    <div class="container" id="row-wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+
+    <h1>row wrap-reverse</h1>
+    <div class="container" id="row-wrap-reverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+
+    <h1>row-reverse wrap</h1>
+    <div class="container" id="row-reverse-wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+    <h1>row-reverse wrap-reverse</h1>
+    <div class="container" id="row-reverse-wrap-reverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+  </body>
+</html>

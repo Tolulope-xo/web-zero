@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .container > div{
+            margin: 25px;
+            box-sizing: border-box;
+            border: 3px solid darkgoldenrod;
+        }
+
+        .w-50{
+            width: 50px;
+            height: 50px;
+        }
+
+        .w-100{
+            width: 100px;
+            height: 100px;
+        }
+        .w-150{
+            width: 150px;
+            height: 150px;
+        }
+        .w-450{
+            width: 450px;
+            height: 450px;
+        }
+
+        #centered{
+            align-items: center;
+        }
+        #flex-end{
+            align-items: flex-end;
+        }
+        #baseline{
+            align-items: baseline;
+        
+        }
+        #stretched{
+            align-items: stretch;
+        }
+
+        #streched [class|="w"]{
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+<!---------------------DEFAULT------------------------------------->
+<h1>default -- flex-start</h1>
+    <div class="container">
+        <div class="w-50"></div>
+        <div class="w-100"></div>
+        <div class="w-150"></div>
+        <div class="w-450"></div>
+    </div>
+
+
+
+<!---------------------CENTERD------------------------------------>
+<h1>centered</h1>
+<div class="container" id="centered">
+    <div class="w-50"></div>
+    <div class="w-100"></div>
+    <div class="w-150"></div>
+    <div class="w-450"></div>
+</div>
+
+
+
+
+<!--------------------FLEX END--------------------------------->
+<h1>flex-end</h1>
+<div class="container" id="flex-end">
+    <div class="w-50"></div>
+    <div class="w-100"></div>
+    <div class="w-150"></div>
+    <div class="w-450"></div>
+</div>
+
+
+
+
+<!--------------------BASELINE----------------------------------->
+<h1>baseline</h1>
+<div class="container" id="baseline">
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum non saepe velit naium? Sit, recusandae!
+        Lorem ipsum dolor sit amet 
+    </div>
+    <div>m fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudant</div>
+    <div >m fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudant</div>
+    <div>m fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudant</div>
+</div>
+
+
+
+
+
+
+<!---------------------STRETCHED----------------------------------->
+<h1>stretched</h1>
+<div class="container" id="stretched">
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum non saepe velit naium? Sit, recusandae!
+        Lorem ipsum dolor sit amet 
+    </div>
+    <div>m fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudant</div>
+    <div >m fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudant</div>
+    <div>m fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudantm fugit, veniam, explicabo voluptate laboriosam qui numquam laborum reiciendis unde et repudiandae architecto laudant</div>
+</div>
+</body>
+</html>

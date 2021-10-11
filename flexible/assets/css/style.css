@@ -1,0 +1,199 @@
+/*variables*/
+:root {
+    --spacer: 25px;
+    --secondary: #868A91;
+    --dark: #3F4249;
+    --primary: #4D61FC;
+    --danger: #EC4969;
+    --warning: #FFBB00;
+    --success: #00B77E;
+    --basic: #2B83FC;
+    --mt: 100px;
+    --white: #fff;
+}
+
+
+/*dependencies*/
+@font-face {
+    font-family: "montserrat regular";
+    src: url(./../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "montserrat light";
+    src: url(./../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "montserrat medium";
+    src: url(./../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "montserrat bold";
+    src: url(./../fonts/Montserrat-Bold.ttf);
+}
+
+
+/*default and overides*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "montserrat medium";
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+h1,
+h2 {
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.355rem;
+}
+
+/*------------------------------APP CONTAINER --------------------------------------*/
+.container {
+    padding: calc(var(--spacer) * 2.5) calc(var(--spacer) * 4.35) calc(var(--spacer) * .5);
+
+}
+
+/*------------------------------NAVIGATION-------------------------------------*/
+nav {
+    padding: 0 calc(var(--spacer) * 4.35) calc(var(--spacer) * .5);
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li a {
+    color: var(--dark);
+    text-decoration: none;
+
+}
+
+nav ul li a {
+    margin: calc(var(--spacer)/10);
+}
+
+
+nav ul li:first-child {
+    margin-right: auto;
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+/*-----------------------------HERO-----------------------------------*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: calc(var(--mt)*1.5);
+    margin-bottom: var(--mt);
+
+}
+
+header>div h1 {
+    font-size: 2.5rem;
+    font-family: "montserrat bold";
+}
+
+header>div div {
+    display: flex;
+    max-width: 75%;
+    margin-top: calc(var(--mt)/3);
+}
+
+header>div div a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--spacer)/2);
+    border-radius: 3px;
+    align-content: center;
+}
+
+header>div div a * {
+    display: block;
+}
+
+
+header>div div a:first-child {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+header>div div a:last-child svg {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    padding: .25rem;
+    margin-left: .35rem;
+}
+
+header>div div a:hover {
+    fill: var(--secondary);
+    color: var(--secondary);
+}
+
+header img {
+    display: block;
+    max-width: 45vw !important;
+
+}
+
+/*----------------------------MAIN CONTENT first child--------------------------------*/
+main>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+main>div:first-child>div * {
+    display: block;
+}
+
+main>div:first-child>div h2 {
+    font-weight: bolder;
+    margin: var(--spacer) 0;
+}
+
+
+
+main>div:first-child>div svg {
+    min-width: 35%;
+    border-radius: 7.5px;
+    padding: var(--spacer) 10px;
+    box-sizing: content-box;
+    background-color: var(--success);
+    stroke-width: 2;
+}
+
+/* main>div:first-child>div svg:first-child{ */
+/* } */
+/*  */
+/* main>div:first-child>div svg:last-child{ */
+    /* background-color: var(--primary); */
+/* } */
+main>div:first-child>div {
+    display: inherit;
+    flex-direction: column;
+    padding: var(--spacer);
+}

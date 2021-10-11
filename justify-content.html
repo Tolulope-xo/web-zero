@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid red;
+      }
+
+      .container > div {
+        width: 50px;
+        height: 50px;
+        border: 1px solid grey;
+        text-align: center;
+      }
+
+      #flex-start {
+        justify-content: flex-start;
+      }
+
+      #flex-end {
+        justify-content: flex-end;
+      }
+      #space-between{
+          justify-content: space-between;
+      }
+      #space-around{
+          justify-content: space-around;
+      }
+      #space-evenly{
+          justify-content: space-evenly;
+      }
+
+      #centered, .cc{
+          justify-content: center;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <h1>default</h1>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-------------------------------------FFLEX START----------------------------------------->
+    <h1>flex-space</h1>
+    <div class="container" id="flex-start">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-------------------------------------FFLEX END---------------------------------------->
+    <h1>flex-end</h1>
+    <div class="container" id="flex-end">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+
+    <!-------------------------------------sPACE BETWEEN---------------------------------------->
+    <h1>space between</h1>
+    <div class="container" id="space-between">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+
+       <!-------------------------------------sPACE AROUND---------------------------------------->
+       <h1>space around</h1>
+       <div class="container" id="space-around">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+       </div>
+
+
+          <!-------------------------------------sPACE EVENLY-------------------------------------->
+    <h1>space evenly</h1>
+    <div class="container" id="space-evenly">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+
+          <!-------------------------------------sPACE EVENLY-------------------------------------->
+          <h1>centered</h1>
+          <div class="container" id="centered">
+            <div id="start"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+  </body>
+</html>
